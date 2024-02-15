@@ -5,19 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konverter Suhu</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="/js/script.js"></script>
 </head>
 <body>
     <header id="navigation-bar">
-        <h3 id="logo">Taro Logo</h3>
+        <img src="/resource/logo.jpg" alt="revoUlogo">
         <nav id="navigation">
-            <a href="">Lihat Hasil</a>
-            <a href="">Lihat Rumus</a>
+            <a href="https://youtu.be/beNbdYc6_7o?feature=shared">Lihat Rumus</a>
         </nav>
     </header>
+    <h1>Website Konversi Suhu</h1>
+    <p>Masukan suhu Celcius (℃) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit(℉). </p>
     <div class="input-section">
         <label for="input-field">Celcius</label>
         <input type="number" class="input-field">
     </div>
-    <button class="my-button">Konversi</button>
+    <button id="konversi" class="my-button" onclick="konversiSuhu()">Konversi</button>
+    <button id="reset" class="my-button" onclick="resetFields()">Reset</button>
+    <button id="reverse" class="my-button" onclick="reverseConversion()">Reverse</button>
+    <br>
+    <br>
+    <div class="input-section">
+        <label for="input-field">Fahrenheit</label>
+        <input type="number" class="input-field">
+    </div>
+    <div class="input-section">
+        <label for="text-field">Cara Kalkulasi</label>
+        <input type="text" class="text-field" value="" readonly>
+    </div>
+    <hr>
+    <br>
+    <hr>
+    <h3>Developer🏴Ramanda Nur Ikram</h3>
 </body>
 </html>
